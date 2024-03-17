@@ -26,3 +26,25 @@
     font-family: Arial, Helvetica, sans-serif;
 
   }
+
+  .question {
+    padding: 10px;
+    text-align: center;
+    background: #ecff45;
+    margin:30px;
+    margin-top: -10px;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .answer {
+    padding: 10px;
+    text-align: center;
+    background: #ef72ce;
+    margin:30px;
+    margin-top: -10px;
+    font: size 15px;px;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
