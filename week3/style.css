@@ -1,0 +1,72 @@
+* {
+    color: white;
+}
+
+h1 {
+    color: aqua;
+    text-align: left;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900; 
+    margin: 10px;
+    
+}
+
+h2 {
+    padding: 10px;
+}
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+  }
+
+/* this is a comment */
+p {
+    color: white;
+    
+}
+
+span {
+    color: orange;
+}
+
+.my-colors {
+    color: white;
+}
+
+#venue {
+    color: greenyellow;
+    margin: 10px;
+    font-weight: 1000; 
+}
+
+[data-email="email"] {
+    color: white;
+}
+
+ul > li {
+    color: white;
+    margin: 5px;
+    padding-left: 5px;
+}
+
+li > strong {
+    color: black;
+}
+
+body {
+    text-align: left;
+    padding: 10px;
+    border: 15px solid lightcoral;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: linear-gradient(to right top, #335280, #5260a7, #8369c8, #be6cdf, #ff67ea);
+}
+
+p {
+    line-height: 1.4;
+    margin: 10px;
+}
