@@ -9,13 +9,15 @@
   h1 {
     color: rgb(255, 255, 255);
     font-size: 50px;
-    font-family: Barlow;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
   }
 
   .question {
-    padding: 10px;
-    text-align: center;
+    padding: 15px;
+    text-align: left;
     background: #ecff458e;
     margin:30px;
     margin-top: 20px;
@@ -26,11 +28,11 @@
   }
 
   .answer {
-    padding: 10px;
-    text-align: center;
-    background: #ef72cea9;
+    padding: 15px;
+    text-align: left;
+    background: #ecff458e;
     margin:30px;
-    margin-top: -20px;
+    margin-top: -30px;
     font: size 15px;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
@@ -38,11 +40,11 @@
   }
 
   .table {
-    padding: 10px;
-    text-align: center;
-    background: #ef72cea9;
-    margin:30px;
-    margin-top: -20px;
+    padding: 3px;
+    text-align: left;
+    background: #ecff458e;
+    margin: 30px;
+    margin-top: -30px;
     font: size 15px;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
