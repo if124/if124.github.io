@@ -16,7 +16,7 @@
   .question {
     padding: 10px;
     text-align: center;
-    background: #ecff45;
+    background: #ecff458e;
     margin:30px;
     margin-top: 20px;
     font-size:20px;
@@ -27,7 +27,7 @@
   .answer {
     padding: 10px;
     text-align: center;
-    background: #ef72ce;
+    background: #ef72cea9;
     margin:30px;
     margin-top: -20px;
     font: size 15px;
@@ -44,4 +44,8 @@
     font: size 15px;
     font-family: Arial, Helvetica, sans-serif;
 
+  }
+
+  body {
+    background-image: linear-gradient(to bottom, #edfdff, #d5f4fc, #bfe9fd, #aeddfe, #a3d0ff, #abccfe, #b3c9fc, #bbc5f9, #c9cdf4, #d5d5ef, #dfdeeb, #e7e7e7);
   }
