@@ -1,10 +1,10 @@
 .header {
-    padding: 5px;
-    text-align: center;
-    background: #5c6fff;
-    margin: 30px;
-    font-size:20px;
-  }
+  padding: 30px;
+  text-align: center;
+  background: #5c6fff;
+  margin:30px;
+  font-size:20px;
+}
 
   h1 {
     color: rgb(255, 255, 255);
@@ -14,25 +14,45 @@
     font-style: normal;
   }
 
+  /* Chose yellow as box colour to provide contrast between website background gradient and text */
   .question {
-    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
     text-align: left;
     background: #ecff458e;
-    margin: 30px;
-    margin-top: 20px;
-    font-size:20px;
+    margin:30px;
+    margin-top: 30px;
+    font-size: 20px;
     font-family: "Barlow", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: black;
   }
 
   .answer {
-    padding: 15px;
+    padding: 20px;
     text-align: left;
     background: #ecff458e;
     margin: 30px;
     margin-top: -30px;
-    font: size 15px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+  }
+
+  /* Used a flex container function for Back to Home button */
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-container > div {
+    background-color: rgba(158, 255, 160, 0.75);
+    margin-bottom: 30px;
+    padding: 25px;
+    font-size: 20px;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;

@@ -1,4 +1,4 @@
-  .header {
+.header {
     padding: 30px;
     text-align: center;
     background: #5c6fff;
@@ -10,22 +10,25 @@
     color: rgb(255, 255, 255);
   }
 
-  .center-text {
-    text-align: center;
-    background: rgba(158, 255, 160, 0.75);
-    border: none;
-    color: white;
-    padding: 22px;
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 30px;
+  /* Used a flex container function to align buttons to center of page */
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-container > div {
+    background-color: rgba(158, 255, 160, 0.75);
+    margin: 30px;
+    padding: 25px;
     font-size: 20px;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 
+  /* Added background gradient for more visual flair to website, gradient chosen
+  is as so because it is gentle to the eyes and allows sustainined reading */
   body {
-    background-image: linear-gradient(to bottom, #edfdff, #d5f4fc, #bfe9fd, #aeddfe, #a3d0ff, #abccfe, #b3c9fc, #bbc5f9, #c9cdf4, #d5d5ef, #dfdeeb, #e7e7e7);
+    background-image: linear-gradient(to bottom, #edfdff, #d5f4fc, #bfe9fd, #aeddfe,
+    #a3d0ff, #abccfe, #b3c9fc, #bbc5f9, #c9cdf4, #d5d5ef, #dfdeeb, #e7e7e7);
   }
