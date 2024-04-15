@@ -37,6 +37,15 @@
     line-height: 1.5;
   }
 
+  .gif-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .gif-container > div {
+    width: 200px;
+  }
+
   /* Added background gradient for more visual flair to website, gradient chosen
   is as so because it is gentle to the eyes and allows sustainined reading */
   body {
