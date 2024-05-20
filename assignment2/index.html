@@ -1,11 +1,196 @@
+<!-- This is a brief rundown of the code below. I started off this assignment with the intention to make the
+page serve as a promotional page for a music video that an artist had created. With that in mind, I sought out
+to find the things that I felt were required in a page like so. Elements that should be within the page includes:
+
+- Media Player with timeline
+- Volume Controls
+- Playback Controls
+- Artist Bio
+- Like Counter
+
+You will see as you peruse the code that some of these elements fell short, but that's fine. You will also see
+the different things I tried to do in my process of making this page. As of now, this is what I've got. Further
+details regarding each section of the code is discussed along the way.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    
 </head>
 <body>
-    
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code lays out the header of the page. -->
+  <header>
+      <h1>Interactive Media 1</h1>
+      <h2>Assignment 2</h2>
+  </header>
+
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code lays out the video and its title above it. This was to allow users to understand what
+is the work that they're about to see. -->
+<main class="container">
+  <div class="title">
+    <p>"The Longest Hum Store" by Digital Ocean Spaces</p>
+  </div>
+
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code lays out the video player controls and its video timeline. You can see my past attempts
+at making certain buttons but to no avail, they're elaborated on when you get to them. -->
+  <div class="media-player">
+    <video id="custom-video-player" controls>
+      <source
+        src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+        type="video/mp4"
+        />
+        Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="progress-bar">
+    <span id="progress-bar-fill"></span>
+  </div>
+
+  <div class="custom-controls">
+    <!-- This button was supposed to move the video back by five seconds, but due to coding issues within the
+    script.js it could not work. more information in the script.js -->
+    <!-- <button id="back-five-button">
+        <img
+        id="back-five-img"
+        src="https://img.icons8.com/ios-glyphs/30/rewind.png"
+        alt="Back five Button"
+        width="24"
+        height="24"
+      />
+    </button> -->
+
+    <button id="play-pause-button" onclick="togglePlayPause()">
+      <img
+        id="play-pause-img"
+        src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+        alt="Play pause Button"
+        width="24"
+        height="24"
+      />
+    </button>
+
+    <!-- This button was supposed to forward the video by five seconds, but due to coding issues within the
+    script.js it could not work. more information in the script.js -->
+    <!-- <button id="forward-five-button">
+        <img
+        id="forward-five-img"
+        src="https://img.icons8.com/ios-glyphs/30/fast-forward.png"
+        alt="Forward five Button"
+        width="24"
+        height="24"
+      />
+    </button> -->
+    <button id="mute-unmute-button">
+        <img
+        id="mute-unmute-img"
+        src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+        alt="Mute unmute Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <button id="decrease-volume-button">
+        <img
+        id="decrease-volume-img"
+        src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+        alt="Decrease volume Button"
+        width="24"
+        height="24"
+      />
+    </button> 
+    <button id="increase-volume-button">
+        <img
+        id="increase-volume-img"
+        src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+        alt="Increase volume Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <button id="fullscreen-button">
+        <img
+        id="fullscreen-img"
+        src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png"
+        alt="Full screen Button"
+        width="24"
+        height="24"
+      />
+    </button>
+  </div>
+
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code lays out the like button and the number of likes that the video has amassed. I felt
+that with a music video, public reception would be critical to letting the artist know whether their work is
+well-recieved or not. Hence, the like counter was included. -->
+  <div class="likes">
+    <button id="like-button">
+      <img
+        id="like-img"
+        src="https://img.icons8.com/ios-filled/50/facebook-like.png"
+        alt="Like Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <span id="total-likes">Total likes: <span id="likes"></span></span>
+  </div>
+
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code lays out the artist bio that fictionally created the music video [yes, they are sharks :))].
+I feel that the music video can only serve to promote the artist so much, with a bio users will be able to know
+who the music video was made by. -->
+  <div class="picture">
+      <img src="./sharks.jpeg" alt="sharkies"/>
+  </div>
+
+  <div class="text">
+    <div id="title">
+     <p>Artist Bio</p>
+    </div>
+  
+    <div id="content">
+      <p>
+        Founded in 2020, "Digital Ocean Spaces" is an artistic duo that specialises in creating audiovisual experiences.
+        Consisting of Aaron Alex and Dan Poe, the duo utilises video-rendering software such as Premiere Pro and Touch
+        Designer to create visuals for the music that they make. As of their founding, the pair has made three studio albums,
+        with their latest one selling over 50,000 copies and achieving Platinum status within a month.
+      </p>
+    </div>  
+  </div>
+</main>
+
+
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code lays out the footer of the page and gives credit to those who provided the assets.
+Giving credit where it's due is critical, not doing so is unethical. -->
+<footer>
+  <p>&copy; 2024 Media Player Website. All rights reserved.<br>
+    <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+    <a href="https://icons8.com">Icons8</a> |
+    <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+    <a href="https://icons8.com">Icons8</a> |
+    <a href="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png">Mute</a> icon by
+    <a href="https://icons8.com">Icons8</a> |
+    <a href="https://img.icons8.com/ios-glyphs/30/low-volume.png">Lower Volume</a> icon by
+    <a href="https://icons8.com">Icons8</a> |
+    <a href="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png">Max Out Volume</a> icon by
+    <a href="https://icons8.com">Icons8</a> |
+    <a href="https://https://img.icons8.com/ios-filled/50/facebook-like.png">Like Button</a> icon by
+    <a href="https://icons8.com">Icons8</a>
+  </p>
+</footer>
+
 </body>
 </html>

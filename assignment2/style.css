@@ -1,0 +1,173 @@
+/* The following code designs the background of the page to be black to make it more thematic as opposed
+to white. It also makes texts easier to read. */
+body {
+    background-color: black;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* The following code formats the header of the page. I used the same font as I did in Assignment 1 to provide
+consistency between assignments. Additionally, I felt that the font was readable against the black background I
+used for the page. */
+header {
+    background-color: rgb(45, 5, 19);
+    padding-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 22px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* The following code formats the media player's appearance, from the buttons to the timeline aesthetics.
+Purple was used as the main colour to provide theme unification with the music video that it serves. */
+media-player {
+    width: 100%;
+    margin: 0 auto;
+}
+  
+  .media-player video {
+    max-width: 100%;
+  }
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .custom-controls button {
+    background-color: rgb(205, 119, 248);
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 20%;
+    border: 3px solid;
+  }
+  
+.progress-bar {
+    width: 99.4%;
+    height: 10px;
+    background-color: #c29eec;
+    margin-top: 10px;
+    overflow: hidden;
+    border: 2px solid;
+  }
+  
+  .progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: rgb(45, 5, 19);
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* The following code formats the like button's appearance. Much like the video player's controls, the button
+is also purple for the same reason of thematic consistency. */
+#like-button {
+    background-color: rgb(205, 119, 248);
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 20%;
+    border: 3px solid;
+}
+
+#total-likes {
+    font-family: "Barlow", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#likes {
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* The following code formats the appearance of the Artist Bio and its accompanying picture. A border was
+added to the picture to provide encapsulation of it, not having a border to frame it did not look right. */
+.picture {
+    float: left;
+    width: 400px;
+    border: 5px solid;
+    border-color: #c29eec;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#title {
+    text-align: left;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-left: 420px;
+}
+
+#content {
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 420px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* The following code formats the appearance of the footer. Text decoration was removed from the links so
+that the links look less jarring and more aesthetically pleasing. */
+footer {
+    background-color: rgb(45, 5, 19);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+}
+
+a {
+text-decoration: none;
+color: var(--text-color);
+}
