@@ -36,28 +36,25 @@ function updateProgressBar() {
 
 
 //--------------------------------------------------------------
-// The following code is supposed to be for skipping or going back through the video by 5 seconds. Despite
-// my attempts at trying to get this section to work, I could not figure out how to get the video to check
-// the value of the currentTime parameter. This code as of now just makes the video move back to the start
-// or 5 seconds in, which is not the intended function for it.
+// The following code is supposed to be for skipping or going back through the video by 5 seconds.
 
-// const backFiveButton = document.querySelector("#back-five-button");
-// console.log(backFiveButton);
+const backFiveButton = document.querySelector("#back-five-button");
+console.log(backFiveButton);
 
-// backFiveButton.addEventListener("click", backFive);
+backFiveButton.addEventListener("click", backFive);
 
-// function backFive() {
-//     video.currentTime =-5;
-// }
+function backFive() {
+    video.currentTime = video.currentTime - 5;
+}
 
-// const forwardFiveButton = document.querySelector("#forward-five-button");
-// console.log(forwardFiveButton);
+const forwardFiveButton = document.querySelector("#forward-five-button");
+console.log(forwardFiveButton);
 
-// forwardFiveButton.addEventListener("click", forwardFive);
+forwardFiveButton.addEventListener("click", forwardFive);
 
-// function forwardFive() {
-//     video.currentTime =+5;
-// }
+function forwardFive() {
+    video.currentTime = video.currentTime + 5;
+}
 
 
 //--------------------------------------------------------------
