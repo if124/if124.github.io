@@ -36,7 +36,7 @@ function updateProgressBar() {
 
 
 //--------------------------------------------------------------
-// The following code is supposed to be for skipping or going back through the video by 5 seconds.
+// The following code is for moving forward or going back through the video by 5 seconds.
 
 const backFiveButton = document.querySelector("#back-five-button");
 console.log(backFiveButton);
@@ -55,6 +55,17 @@ forwardFiveButton.addEventListener("click", forwardFive);
 function forwardFive() {
     video.currentTime = video.currentTime + 5;
 }
+
+//--------------------------------------------------------------
+// This code was done in an attempt to get the button to change colour when clicked on, I couldn't get it to work.
+// function toggleForwardFive() {
+//     if (forwardFiveButton.clicked) {
+//       forwardFiveButton.backgroundColor = "rgb(205, 119, 150)";
+//     } else {
+//         forwardFiveButton.backgroundColor = "rgb(205, 119, 248)";
+//     }
+//   }
+//--------------------------------------------------------------
 
 
 //--------------------------------------------------------------
