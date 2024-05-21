@@ -1,0 +1,199 @@
+body {
+  background-color: #1a120b;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5e5cb;
+  /* color: #3c2a21; */
+  font-size: 1.1rem;
+  gap: 1.5rem;
+  }
+  
+  .outer {
+    border: 2px dashed #e5e5cb7a;
+    width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    opacity: 1;
+    /* background-color: cornsilk; */
+  }
+
+button {
+    padding: 20px;
+    font-size: 2rem;
+    background-color: cornflowerblue;
+    border: none;
+    transition: background-color 0.4s ease scale 0.4s ease rotate 0.4s ease;
+    color: cornsilk;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(28, 28, 92);
+    /* scale: 0.8;
+    translate: -20px -20px; */
+    /* rotate: 10deg; */
+    /* color: cornsilk; */
+}
+
+input {
+    padding: 10px;
+    border: 4px soild lime;
+    transition: border-color 0.3s linear;
+    border-radius: 12px;
+}
+
+input:hover {
+    border-color: crimson;
+}
+
+.fill-icon{
+  transition: fill 0.3s ease;
+}
+
+.fill-icon:hover {
+  fill: blue;
+}
+
+.duck-icon:hover {
+  /* scale:1.1; */
+  /* translate: -10px -20px; */
+}
+
+#box {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation-name: border-switch;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-width: 6px;
+}
+
+@keyframes color-switch {
+  0% {
+    background-color: purple;
+  }
+  20% {
+    background-color: blue;
+  }
+  40% {
+    background-color: lime;
+  }
+  60% {
+    background-color: yellow;
+  }
+  80% {
+    background-color: red;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+@keyframes border-switch {
+  0% {
+    border-color: purple;
+  }
+  20% {
+    border-color: blue;
+  }
+  40% {
+    border-color: lime;
+  }
+  60% {
+    border-color: yellow;
+  }
+  80% {
+    border-color: red;
+  }
+  100% {
+    border-color: purple;
+  }
+}
+
+.duck-icon {
+  /* transition: translate 0.4s linear; */
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  }
+
+@keyframes bounce {
+  100% {
+    translate: 0px 0px;
+  }
+  20% {
+    translate: 0px -30px;
+  }
+  60% {
+    translate: 0px -15px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+.spinner {
+  width:120px;
+  height: 120px;
+  /* background-color: white; */
+  border: 6px solid white;
+  border-top: 6px solid crimson;
+  border-radius: 50%;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
+
+#heart {
+  width: 200px;
+  height: 200px;
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+#side-drawer {  
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  background-color: cornflowerblue;
+  transition: translate 0.4s linear;
+}
