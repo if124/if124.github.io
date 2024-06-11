@@ -1,0 +1,86 @@
+body {
+    background-image: url('background.jpg');
+}
+
+
+h1 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    filter: drop-shadow(4px 2px 3px #3b3b3b);
+    margin-top: 240px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    filter: drop-shadow(4px 2px 3px #3b3b3b);
+    margin-top: 5px;
+}
+
+.container {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    filter: drop-shadow(4px 2px 3px #3b3b3b);
+    margin-top: 240px;
+}
+
+.img-container {
+    display: flex;
+    overflow: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 550px;
+    width: 68%;
+    background-color: black;
+}
+
+/* .img-container .Colour p.Colourtext {
+    position: absolute;
+    visibility: none;
+}
+
+.img-container .Colour:hover p.Colourtext {
+    visibility: visible;
+} */
+
+.img-container #Colour:hover {
+    opacity: 50%;
+}
+
+.img-container #Flowchart:hover {
+    opacity: 50%;
+}
+
+.img-container #Shapes:hover {
+    opacity: 50%;
+}
+
+.img-container #Magic:hover {
+    opacity: 50%;
+}
+
+.img-container #Garageband:hover {
+    opacity: 50%;
+}
+
+.img-container #Plugin:hover {
+    opacity: 50%;
+}
+
+.img-container #Effects:hover {
+    opacity: 50%;
+}
+
+.box {
+    margin: auto;
+    width: 97%;
+    height: 500px;
+    background-color: rgba(124, 70, 239, 0.508);
+}
