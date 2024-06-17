@@ -10,27 +10,107 @@
     <script src="script.js" defer></script>
 </head>
   <body>
+
 <!---------------------------------------------------------------------------------------------------------->
 <!-- The following code lays out the introductory section of the page. -->
     <h1>Transformative Colour-Resonance Environments</h1>
     <h2>The Website</h2>
 
-    <div class="container">
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code creates the Creative Process section of the website. This section features a side-
+ scrolling box that users can scroll through to see what the artist did in his journey with the project.
+ Each image within the box can be hovered over, upon which a description of the image will be shown. To
+ provide better readability, an overlay is applied onto the description to provide better contrast between
+ the text and the image itself. -->
+
+    <div class="img-container">
       <p1>The Creative Process</p1>
-        <div class="img-container">
-          <!-- <div class="Colour">
-            <img src="colours.jpg" id="Colour" alt="Colour">
-            <p class="Colourtext">sdfsaf</p>
-          </div> -->
-          <img src="colours.jpg" id="Colour" alt="Colour">
-          <img src="colourflowchart.png" id="Flowchart" alt="Flowchart">
-          <img src="shapes.png" id="Shapes" alt="Shapes">
-          <img src="magicmusicvisuals.png" id="Magic" alt="Magic">
-          <img src="garageband.png" id="Garageband" alt="Garageband">
-          <img src="garagebandplugin.png" id="Plugin" alt="Plugin">
-          <img src="aftereffects.png" id="Effects" alt="Effects">
+      <br>
+      <p2>Hover over the images for more information!</p2>
+
+      <div class="colour">
+        <img src="colours.jpg" id="colour" alt="colour">
+        <div class="colourtext">
+          The Chosen Colours were these three colours. Each of them represents a different
+          feeling. Not listed in any order, they are Nostalgia, Happiness and Love.
         </div>
+      </div>
+
+      <div class="flowchart">
+        <img src="colourflowchart.png" id="flowchart" alt="flowchart">
+        <div class="flowcharttext">
+          The Colour Flowchart involved playing around with these colours in order to see which colours flowed
+          into others better.
+        </div>
+      </div>
+
+      <div class="shapes">
+        <img src="shapes.png" id="shapes" alt="shapes">
+        <div class="shapestext">
+          The Shapes Experiments was an exercise that had the artist create a whole catalogue of shapes
+          to play around with and let the colour populate it. Doing so enabled the artist to semantically
+          assign each colour to a shape that he desired.
+        </div>
+      </div>
+
+      <div class="magic">
+        <img src="magicmusicvisuals.png" id="magic" alt="magic">
+        <div class="magictext">
+          The Test with Magic Music Visuals was done to test just what the software could do. The output from
+          the test was not as desirable as the artist envisioned, so he decided to scrap the idea and utilise
+          another software.
+        </div>
+      </div>
+
+      <div class="effects">
+        <img src="aftereffects.png" id="effects" alt="effects">
+        <div class="effectstext">
+          The After Effects Incorporation was a period of enlightenment. This was where the artist managed to
+          find a way to create the work he envisioned. By using After Effects, the chosen colours were able to
+          ebb and flow as intended by him.
+        </div>
+      </div>
+
+      <div class="garageband">
+        <img src="garageband.png" id="garageband" alt="garageband">
+        <div class="garagebandtext">
+          The GarageBand Implementation involved getting visuals to work with the visuals created within After
+          Effects. Careful consideration was carried out when deciding on what instruments to use to accompany
+          those visuals. GarageBand was used to allow the artist to see the visuals as they come and play the
+          accompanying audio accordingly.
+        </div>
+      </div>
+
+      <div class="plugin">
+        <img src="garagebandplugin.png" id="plugin" alt="plugin">
+        <div class="plugintext">
+          The GarageBand plugin called "LABS by Spitfire Audio" was utilised within the tracks created. Auditory
+          attributes such as reverb and sustain was edited using this plugin. The result was a piece of work
+          that allowed resonance to occur within viewers.
+        </div>
+      </div>
     </div>
 
+    <div class="challenge">
+    <p3>The Challenge</p3>
+    <br>
+    <p4>Click and drag the colours to their assigned emotions!</p4>
+    </div>
+
+    <div class="drag-drop-container">
+      <div class="left-box">
+        <div class="outer leftbox" id="leftbox" draggable="true">#FFC37C</div>
+        <div class="outer leftdropbox">Nostalgia</div>
+      </div>
+      <div class="middle-box">
+        <div class="outer middlebox" id="middlebox" draggable="true">#FF49B1</div>
+        <div class="outer middledropbox">Happiness</div>
+      </div>
+      <div class="right-box">
+        <div class="outer rightbox" id="rightbox" draggable="true">#4038A8</div>
+        <div class="outer rightdropbox">Love</div>
+      </div>
+    </div>
+  
   </body>
 </html>

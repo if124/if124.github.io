@@ -21,66 +21,350 @@ h2 {
     margin-top: 5px;
 }
 
-.container {
+.img-container {
+    margin: auto;
     text-align: center;
+    filter: drop-shadow(4px 2px 3px #3b3b3b);
+    margin-top: 240px;
+    width: 90%;
+}
+
+p1 {
     font-family: "Barlow", sans-serif;
     font-size: 70px;
     font-weight: 700;
-    filter: drop-shadow(4px 2px 3px #3b3b3b);
-    margin-top: 240px;
 }
 
-.img-container {
-    display: flex;
-    overflow: auto;
-    margin: auto;
+p2 {
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* CSS for colour image */
+
+.colour {
+    position: relative;
+    text-align: center;
+    color: white;
     margin-top: 30px;
-    margin-bottom: 30px;
-    height: 550px;
-    width: 68%;
-    background-color: black;
-}
+    background-color: rgb(0, 0, 0);
+  }
 
-/* .img-container .Colour p.Colourtext {
+.colourtext {
     position: absolute;
-    visibility: none;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
 }
 
-.img-container .Colour:hover p.Colourtext {
-    visibility: visible;
-} */
-
-.img-container #Colour:hover {
-    opacity: 50%;
+.colour:hover .colourtext {
+    opacity: 1;
 }
 
-.img-container #Flowchart:hover {
-    opacity: 50%;
+#colour {
+    transition: .5s ease;
 }
 
-.img-container #Shapes:hover {
-    opacity: 50%;
+.colour:hover #colour {
+    opacity: 30%;
 }
 
-.img-container #Magic:hover {
-    opacity: 50%;
+/* CSS for colour flowchart image */
+
+.flowchart {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+  }
+
+.flowcharttext {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
 }
 
-.img-container #Garageband:hover {
-    opacity: 50%;
+.flowchart:hover .flowcharttext {
+    opacity: 1;
 }
 
-.img-container #Plugin:hover {
-    opacity: 50%;
+#flowchart {
+    transition: .5s ease;
 }
 
-.img-container #Effects:hover {
-    opacity: 50%;
+.flowchart:hover #flowchart {
+    opacity: 30%;
 }
 
-.box {
+/* CSS for shapes image */
+
+.shapes {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+  }
+
+.shapestext {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.shapes:hover .shapestext {
+    opacity: 1;
+}
+
+#shapes {
+    transition: .5s ease;
+}
+
+.shapes:hover #shapes {
+    opacity: 30%;
+}
+
+/* CSS for magic image */
+
+.magic {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+  }
+
+.magictext {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.magic:hover .magictext {
+    opacity: 1;
+}
+
+#magic {
+    transition: .5s ease;
+}
+
+.magic:hover #magic {
+    opacity: 30%;
+}
+
+/* CSS for effects image */
+
+.effects {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+  }
+
+.effectstext {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.effects:hover .effectstext {
+    opacity: 1;
+}
+
+#effects {
+    transition: .5s ease;
+}
+
+.effects:hover #effects {
+    opacity: 30%;
+}
+
+/* CSS for garageband image */
+
+.garageband {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+  }
+
+.garagebandtext {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.garageband:hover .garagebandtext {
+    opacity: 1;
+}
+
+#garageband {
+    transition: .5s ease;
+}
+
+.garageband:hover #garageband {
+    opacity: 30%;
+}
+
+/* CSS for plugin image */
+
+.plugin {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 80px;
+  }
+
+.plugintext {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.plugin:hover .plugintext {
+    opacity: 1;
+}
+
+#plugin {
+    transition: .5s ease;
+}
+
+.plugin:hover #plugin {
+    opacity: 30%;
+}
+
+p3 {
+    margin-top: 240px;
     margin: auto;
-    width: 97%;
-    height: 500px;
-    background-color: rgba(124, 70, 239, 0.508);
+    text-align: center;
+    filter: drop-shadow(4px 2px 3px #3b3b3b);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+p4 {
+    margin: auto;
+    text-align: center;
+    filter: drop-shadow(4px 2px 3px #3b3b3b);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.drag-drop-container {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    gap: 1.5rem;
+  }
+  
+  .outer {
+    width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 80px;
+    filter: drop-shadow(4px 2px 3px #3b3b3b);
+  }
+
+.leftbox {
+    background-color: #FFC37C;
+    cursor: pointer;
+
+}
+  
+.leftdropbox {
+    border: 2px dashed #e5e5cb7a;
+    cursor: pointer;
+}
+
+.middlebox {
+    background-color: #FF49B1;
+    cursor: pointer;
+}
+  
+.middledropbox {
+    border: 2px dashed #e5e5cb7a;
+    cursor: pointer;
+}
+
+.rightbox {
+    background-color: #4038A8;
+    cursor: pointer;
+}
+  
+.rightdropbox {
+    border: 2px dashed #e5e5cb7a;
+    cursor: pointer;
 }
