@@ -60,7 +60,7 @@ p2 {
     opacity: 0;
     transition: .5s ease;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -95,7 +95,7 @@ p2 {
     opacity: 0;
     transition: .5s ease;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -130,7 +130,7 @@ p2 {
     opacity: 0;
     transition: .5s ease;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -165,7 +165,7 @@ p2 {
     opacity: 0;
     transition: .5s ease;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -200,7 +200,7 @@ p2 {
     opacity: 0;
     transition: .5s ease;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -235,7 +235,7 @@ p2 {
     opacity: 0;
     transition: .5s ease;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -271,7 +271,7 @@ p2 {
     opacity: 0;
     transition: .5s ease;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -321,13 +321,13 @@ p4 {
     justify-content: center;
     align-items: center;
     font-family: "Barlow", sans-serif;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
     gap: 1.5rem;
   }
   
   .outer {
-    width: 400px;
+    width: 30vw;
     min-height: 200px;
     padding: 10px;
     display: flex;
@@ -341,12 +341,12 @@ p4 {
 .leftbox {
     background-color: #FFC37C;
     cursor: pointer;
-
 }
   
 .leftdropbox {
     border: 2px dashed #e5e5cb7a;
     cursor: pointer;
+    transition: .3s ease;
 }
 
 .middlebox {
@@ -357,6 +357,7 @@ p4 {
 .middledropbox {
     border: 2px dashed #e5e5cb7a;
     cursor: pointer;
+    transition: .3s ease;
 }
 
 .rightbox {
@@ -367,4 +368,5 @@ p4 {
 .rightdropbox {
     border: 2px dashed #e5e5cb7a;
     cursor: pointer;
+    transition: .3s ease;
 }
