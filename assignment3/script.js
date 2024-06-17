@@ -65,6 +65,7 @@ function handleLeftDrop() {
       .getPropertyValue("background-color");
     middleDropBox.style.backgroundColor = color;
     middleDropBox.textContent = "Yes, #FFC37C is Happiness!";
+    middleDropBox.removeEventListener("drop", handleLeftDrop);
     leftBox.style.backgroundColor = "rgba(0, 0, 0, 0)";
     leftBox.textContent = "";
     leftBox.draggable = false;
@@ -85,6 +86,7 @@ function handleMiddleDrop() {
       .getPropertyValue("background-color");
     rightDropBox.style.backgroundColor = color;
     rightDropBox.textContent = "Yes, #FF49B1 is Love!";
+    rightDropBox.removeEventListener("drop", handleMiddleDrop);
     middleBox.style.backgroundColor = "rgba(0, 0, 0, 0)";
     middleBox.textContent = "";
     middleBox.draggable = false;
@@ -105,6 +107,7 @@ function handleRightDrop() {
       .getPropertyValue("background-color");
     leftDropBox.style.backgroundColor = color;
     leftDropBox.textContent = "Yes, #4038A8 is Nostalgia!";
+    leftDropBox.removeEventListener("drop", handleRightDrop);
     rightBox.style.backgroundColor = "rgba(0, 0, 0, 0)";
     rightBox.textContent = "";
     rightBox.draggable = false;
