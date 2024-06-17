@@ -12,27 +12,31 @@
   <body>
 
 <!---------------------------------------------------------------------------------------------------------->
-<!-- The following code lays out the introductory section of the page. -->
+<!-- The following code creates the introductory section of the page. As shown, this introductory section fills
+ the whole page. Doing so allows users to focus purely on what the website is about without any other
+ potentially distracting elements. -->
+
     <h1>Transformative Colour-Resonance Environments</h1>
     <h2>The Website</h2>
 
 <!---------------------------------------------------------------------------------------------------------->
-<!-- The following code creates the Creative Process section of the website. This section features a side-
- scrolling box that users can scroll through to see what the artist did in his journey with the project.
- Each image within the box can be hovered over, upon which a description of the image will be shown. To
- provide better readability, an overlay is applied onto the description to provide better contrast between
- the text and the image itself. -->
+<!-- The following code creates the Creative Process section of the website. This section features scrolling
+ as a function. This was done to allow easy viewing of the process as users scroll down the page. Each image
+ within the box can be hovered over, upon which a description of the image will be shown. To provide more clarity,
+ instructions are given underneath the section heading. An overlay is also applied onto the description, providing
+ better contrast between the desciptions and their respective images which subsequently allows better readability.
+ The beginning part of each description is also bolded to aid in highlighting what the image is showing. -->
 
     <div class="img-container">
       <p1>The Creative Process</p1>
       <br>
-      <p2>Hover over the images for more information!</p2>
+      <p2>Hover over each image for more information!</p2>
 
       <div class="colour">
         <img src="colours.jpg" id="colour" alt="colour">
         <div class="colourtext" id="text">
           <span style="font-weight:600">The Chosen Colours</span> were these three colours. Each of them represents a different
-          feeling. Not listed in any order, they are Nostalgia, Happiness and Love.
+          feeling. Not listed in any order, these colours represent Nostalgia, Happiness, and Love.
         </div>
       </div>
 
@@ -47,8 +51,8 @@
       <div class="shapes">
         <img src="shapes.png" id="shapes" alt="shapes">
         <div class="shapestext" id="text">
-          <span style="font-weight:600">The Shapes Experiments</span> were an exercise that had the artist create a whole catalogue of shapes
-          to play around with and let the colour populate it. Doing so enabled the artist to semantically
+          <span style="font-weight:600">The Shape Experiments</span> involved the artist creating a whole catalogue of shapes
+          to play around with, subsequently populating each one of them with each colour. Doing so enabled the artist to semantically
           assign each colour to a shape that he desired.
         </div>
       </div>
@@ -66,8 +70,8 @@
         <img src="aftereffects.png" id="effects" alt="effects">
         <div class="effectstext" id="text">
           <span style="font-weight:600">The After Effects Incorporation</span> was a period of enlightenment. This was where the artist managed to
-          find a way to create the work he envisioned. By using After Effects, the chosen colours were able to
-          ebb and flow as intended by him.
+          create the work with effective results. Using compositing witin After Effects, the chosen colours were able to
+          ebb and flow according to what he had envisioned.
         </div>
       </div>
 
@@ -76,8 +80,7 @@
         <div class="garagebandtext" id="text">
           <span style="font-weight:600">The GarageBand Implementation</span> involved getting visuals to work with the visuals created within After
           Effects. Careful consideration was carried out when deciding on what instruments to use to accompany
-          those visuals. GarageBand was used to allow the artist to see the visuals as they come and play the
-          accompanying audio accordingly.
+          those visuals. GarageBand was ultimately used to allow the artist play the accompanying audio according to the video.
         </div>
       </div>
 
@@ -97,6 +100,10 @@
     <p4>Click and drag the colours to their assigned emotions!</p4>
     </div>
 
+<!---------------------------------------------------------------------------------------------------------->
+<!-- The following code creates the drag-and-drop section of the website. Like the Creative Process section, instructions
+ are placed underneath the heading to give users a bit of context as to what they are supposed to do. -->
+
     <div class="drag-drop-container">
       <div class="left-box">
         <div class="outer leftbox" id="leftbox" draggable="true">#FFC37C</div>
@@ -111,6 +118,5 @@
         <div class="outer rightdropbox">Love</div>
       </div>
     </div>
-  
   </body>
 </html>

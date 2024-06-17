@@ -1,7 +1,13 @@
+/* --------------------------------------------------------------------------------------------------------- */
+/* The following code designs the background of the website. The background was repeatedly tiled using Photoshop
+which allows for a seamless-looking backround design. */
+
 body {
     background-image: url('background.jpg');
 }
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* The following code designs the Introductory Page's heading. */
 
 h1 {
     text-align: center;
@@ -20,6 +26,14 @@ h2 {
     filter: drop-shadow(4px 2px 3px #3b3b3b);
     margin-top: 5px;
 }
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* The following code designs the Creative Process section of the page. I am aware that the code is very long
+and can be compressed via a unified id tag that handels the font's attributes. However, continuous iteration 
+of the code would just not let me make the standardised attributes to work within each of the image boxes. Hence,
+I had to resort to this long line of code. Transitions were implemented within each description to make it more
+aesthetically-pleasing to the users. It was here that opacity of the image itself was edited accordingly to
+enable better contrast for reading. */
 
 .img-container {
     margin: auto;
@@ -41,7 +55,8 @@ p2 {
     font-weight: 400;
 }
 
-/* CSS for colour image */
+/* ----------------------------------- */
+/* CSS for Chosen Colours image */
 
 .colour {
     position: relative;
@@ -76,7 +91,8 @@ p2 {
     opacity: 30%;
 }
 
-/* CSS for colour flowchart image */
+/* ----------------------------------- */
+/* CSS for Colour Flowchart image */
 
 .flowchart {
     position: relative;
@@ -111,7 +127,8 @@ p2 {
     opacity: 30%;
 }
 
-/* CSS for shapes image */
+/* ----------------------------------- */
+/* CSS for Shape Experiments image */
 
 .shapes {
     position: relative;
@@ -146,7 +163,8 @@ p2 {
     opacity: 30%;
 }
 
-/* CSS for magic image */
+/* ----------------------------------- */
+/* CSS for Magic Music Visuals image */
 
 .magic {
     position: relative;
@@ -181,7 +199,8 @@ p2 {
     opacity: 30%;
 }
 
-/* CSS for effects image */
+/* ----------------------------------- */
+/* CSS for After Effects image */
 
 .effects {
     position: relative;
@@ -216,7 +235,8 @@ p2 {
     opacity: 30%;
 }
 
-/* CSS for garageband image */
+/* ----------------------------------- */
+/* CSS for GarageBand image */
 
 .garageband {
     position: relative;
@@ -251,7 +271,8 @@ p2 {
     opacity: 30%;
 }
 
-/* CSS for plugin image */
+/* ----------------------------------- */
+/* CSS for GarageBand Plugin image */
 
 .plugin {
     position: relative;
@@ -287,6 +308,10 @@ p2 {
     opacity: 30%;
 }
 
+/* --------------------------------------------------------------------------------------------------------- */
+/* The follwoing code designs the headings for the drag-and-drop section of the website. Like the other headings,
+this heading too has drop shadow for better contrast between background and text. */
+
 p3 {
     margin-top: 240px;
     margin: auto;
@@ -311,6 +336,14 @@ p4 {
     font-size: 40px;
     font-weight: 400;
 }
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* The following code designs the aesthetic qualities of the drag-and-drop elements themselves. As seen in the
+website, a transition animation is implemented when getting the correct answer to provide a more obvious form
+of feedback to users. Drop shadow was used on the boxes to allow better contrast between the boxes and the
+colourful background. Additionally, the dropboxes were outlined with a dotted border to show users where to place
+the colours into. Lastly, the cursor also changes upon hovering over and dragging the colours to provide even
+more visual feedback to users. */
 
 .drag-drop-container {
     display: flex;
