@@ -336,6 +336,7 @@ p4 {
     cursor: pointer;
     margin-bottom: 80px;
     filter: drop-shadow(4px 2px 3px #3b3b3b);
+    transition: 1s ease;
   }
 
 .leftbox {
@@ -346,7 +347,6 @@ p4 {
 .leftdropbox {
     border: 2px dashed #e5e5cb7a;
     cursor: pointer;
-    transition: .3s ease;
 }
 
 .middlebox {
@@ -357,7 +357,6 @@ p4 {
 .middledropbox {
     border: 2px dashed #e5e5cb7a;
     cursor: pointer;
-    transition: .3s ease;
 }
 
 .rightbox {
@@ -368,5 +367,4 @@ p4 {
 .rightdropbox {
     border: 2px dashed #e5e5cb7a;
     cursor: pointer;
-    transition: .3s ease;
 }
